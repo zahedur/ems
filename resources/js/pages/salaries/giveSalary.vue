@@ -163,7 +163,7 @@
                 <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-centered modal-dialog-scrollable" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalCenterTitle">Employee Details</h5>
+                            <h5 class="modal-title" id="exampleModalCenterTitle">The salaries of these employees have already been added</h5>
                             <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                                 <i data-feather="x"></i>
                             </button>
@@ -183,9 +183,12 @@
                                     <tbody>
                                         <tr v-for="aa in alreadyAdded" :key="aa.id">
                                             <td>{{ aa.employee.fname }} {{ aa.employee.lname }} ({{ aa.employee.emp_id }})</td>
-                                            <td>{{ aa.month }}</td>
-                                            <td>{{ aa.year }}</td>
-                                            <td>{{ aa.status }}</td>
+                                            <td class="text-center">{{ getMonthName(aa.month) }}</td>
+                                            <td class="text-center">{{ aa.year }}</td>
+                                            <td class="text-center">
+                                                <span v-if="aa.status" class="bg-success rounded text-white px-2">Paid</span>
+                                                <span v-else class="bg-danger rounded text-white px-2">Due</span>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -205,7 +208,7 @@
 import Pagination from "../../components/Pagination";
 import Datepicker from 'vuejs-datepicker';
 export default {
-    name: "employeesSalary",
+    name: "giveSalary",
     components: { Pagination, Datepicker },
     data() {
         return {

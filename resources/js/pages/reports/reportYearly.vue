@@ -137,7 +137,7 @@
 import Datepicker from 'vuejs-datepicker';
 import VueHtml2pdf from 'vue-html2pdf'
 export default {
-    name: "reportDateRange",
+    name: "reportYearly",
     components: { Datepicker, VueHtml2pdf },
     data() {
         return {

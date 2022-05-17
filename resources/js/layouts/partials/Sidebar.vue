@@ -31,9 +31,9 @@
                     </li>
 
                     <li class="sidebar-item ">
-                        <router-link :to="{ name: 'employeesSalary'}" class='sidebar-link'>
+                        <router-link :to="{ name: 'giveSalary'}" class='sidebar-link'>
                             <i class="fa fa-credit-card"></i>
-                            <span>Employees Salary</span>
+                            <span>Give Salary</span>
                         </router-link>
                     </li>
 
@@ -42,15 +42,12 @@
                             <i class="bi bi-journal-text"></i>
                             <span>Reports</span>
                         </a>
-                        <ul class="submenu ">
+                        <ul class="submenu">
                             <li class="submenu-item ">
-                                <router-link :to="{name: 'reportDate'}">Date</router-link>
+                                <router-link :to="{name: 'reportMonthly'}">Monthly</router-link>
                             </li>
                             <li class="submenu-item ">
-                                <router-link :to="{name: 'reportMonth'}">Monthly</router-link>
-                            </li>
-                            <li class="submenu-item ">
-                                <router-link :to="{name: 'reportDateRange'}">Date Range</router-link>
+                                <router-link :to="{name: 'reportYearly'}">Yearly</router-link>
                             </li>
                         </ul>
                     </li>

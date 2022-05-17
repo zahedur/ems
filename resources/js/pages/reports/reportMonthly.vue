@@ -143,7 +143,7 @@
 import Datepicker from 'vuejs-datepicker';
 import VueHtml2pdf from 'vue-html2pdf'
 export default {
-    name: "reportMonth",
+    name: "reportMonthly",
     components: { Datepicker, VueHtml2pdf },
     data() {
         return {

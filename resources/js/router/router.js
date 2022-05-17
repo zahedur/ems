@@ -12,11 +12,11 @@ import resetPassword from "../pages/auth/resetPassword";
 import dashboard from '../pages/dashboard';
 
 import employees from '../pages/employees/employees';
-import employeesSalary from '../pages/employeesSalary/employeesSalary';
+import giveSalary from '../pages/salaries/giveSalary';
 
 import reportDate from "../pages/reports/reportDate";
-import reportMonth from "../pages/reports/reportMonth";
-import reportDateRange from "../pages/reports/reportDateRange";
+import reportMonthly from "../pages/reports/reportMonthly";
+import reportYearly from "../pages/reports/reportYearly";
 
 import departments from "../pages/settings/departments";
 import designations from "../pages/settings/designations";
@@ -38,7 +38,7 @@ const routes = [
     { path: '/employees', name: 'employees', component: employees, meta: { requiresAuth: true } },
 
     // Employees Salary
-    { path: '/employees-salary', name: 'employeesSalary', component: employeesSalary, meta: { requiresAuth: true } },
+    { path: '/give-salary', name: 'giveSalary', component: giveSalary, meta: { requiresAuth: true } },
 
     //Settings
     { path: '/settings/general', name: 'settingsGeneral', component: general, meta: { requiresAuth: true } },
@@ -53,8 +53,8 @@ const routes = [
 
     //Reports
     { path: '/reports/date', name: 'reportDate', component: reportDate, meta: { requiresAuth: true } },
-    { path: '/reports/month', name: 'reportMonth', component: reportMonth, meta: { requiresAuth: true } },
-    { path: '/reports/date-range', name: 'reportDateRange', component: reportDateRange, meta: { requiresAuth: true } },
+    { path: '/reports/monthly', name: 'reportMonthly', component: reportMonthly, meta: { requiresAuth: true } },
+    { path: '/reports/yearly', name: 'reportYearly', component: reportYearly, meta: { requiresAuth: true } },
 ]
 
 const router = new vueRouter({
