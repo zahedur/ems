@@ -1,0 +1,370 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+
+
+body {
+    background-color: #e8ecf1;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #607080;
+}
+p {
+    margin: 0;
+}
+.card-title {
+    margin-bottom: 0;
+}
+
+.bg-gray50 {
+    background-color: #f5f5f5;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.empty h1,
+.empty h2,
+.empty h3,
+.empty h4,
+.empty h5,
+.empty h5 {
+    color: #607080;
+}
+
+.stats-icon .bi {
+    width: 25px;
+    height: 30px;
+}
+.w100px {
+    width: 100px;
+}
+
+.w80px {
+    width: 80px;
+}
+
+.breadcrumb-item {
+    font-size: 15px;
+    //font-family: 'roboto';
+}
+
+.hamburger-icon {
+    font-size: 27px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading {
+    width: 50px;
+    height: 50px;
+    background: #f2f9ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu-actions {
+    min-width: 12rem;
+}
+
+.small, small {
+    font-size: 14px;
+}
+
+span.vdp-datepicker__clear-button {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+}
+
+/*pagination*/
+.pagination .page-item .page-link {
+    border: 1px solid #e8ecf1;
+
+}
+@media (max-width: 500px) {
+    .pagination {
+        flex-direction: column;
+    }
+    .pagination .page-item {
+        text-align: center;
+    }
+}
+
+
+    /*Header*/
+header {
+    background: #ffffff;
+    box-shadow: 0 0 10px -8px black;
+}
+
+.navbar {
+    height: 60px;
+    padding: 10px 20px;
+}
+
+@media (max-width: 1199px) {
+    .navbar {
+        height: 60px;
+        padding: 10px 0;
+    }
+}
+/*Sidebar*/
+.sidebar-wrapper {
+    transition: left .4s ease-out;
+    background-color: #f4f8ff;
+    width: 270px;
+}
+
+.sidebar-wrapper .sidebar-header {
+    padding: 10px 10px 15px 30px;
+    font-weight: 700;
+    border-bottom: solid 1px #efefef;
+}
+
+.sidebar-wrapper .sidebar-header img {
+    max-width: 110px !important;
+}
+
+.sidebar-wrapper .menu {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    font-weight: 600;
+}
+
+.sidebar-wrapper .menu .sidebar-link {
+    font-size: 16px;
+}
+
+.sidebar-wrapper .menu .submenu .submenu-item a {
+    font-size: 15px;
+}
+
+.dropdown-toggle:after {
+    color: #435ebe;
+}
+
+.sidebar-wrapper .menu .sidebar-item .sidebar-link.router-link-exact-active {
+    background-color: #435ebe;
+    color: #fff;
+    i {
+        color: #fff;
+    }
+}
+
+.app-title {
+    color: #425874;
+    letter-spacing: 1px;
+}
+
+.user-name-letter {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #fff;
+    border: solid 2px #d3d7e3;
+}
+
+/* Profile */
+.profile-photo-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #fff;
+    border: solid 4px #e8ecf1;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+@media (max-width: 350px) {
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .profile-photo-image {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.upload-photo {
+    background: #ebebeb;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    right: -15px;
+    bottom: 30%;
+    border: solid 3px #ffffff;
+    cursor: pointer;
+}
+
+.upload-photo i {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #000000;
+}
+
+.upload-photo:focus {outline: none;}
+
+/*Main content*/
+#main {
+    transition: all .4s ease-out;
+}
+
+@media (min-width: 1200px) {
+    #main {
+        margin-left: 270px;
+    }
+}
+
+#main #main-content {
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#main #main-content-body {
+    padding: 2rem 20px;
+}
+
+@media (max-width: 1199px) {
+    #main #main-content-body {
+        padding: 1rem 10px;
+    }
+}
+
+.page-heading {
+    margin: 0 0 1rem;
+}
+
+.breadcrumb {
+    background: #f4f8ff;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+@media (max-width: 991px) {
+    .breadcrumb {
+        display: none;
+    }
+}
+
+@media (max-width: 479px) {
+    .search input, .search select {
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .search input, .search select {
+        width: 190px;
+    }
+}
+
+
+
+/*Footer*/
+footer {
+    background: #ffffff;
+    padding: 5px 30px;
+    text-align: center;
+}
+
+
+
+/* Start Authentication */
+#auth{
+    height:100vh;overflow-x:hidden
+}
+
+#auth #authentication {
+    height:100%;
+    background: #e5e5e5;
+    //background: url('../js/assets/images/bg/bakery-1.jpg'),linear-gradient(90deg,#2d499d,#3f5491) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+//#authentication:after {
+//    content: "";
+//    width: 100%;
+//    height: 100%;
+//    position: absolute;
+//    background: #c1c1c161;
+//    z-index: 1;
+//}
+
+#auth-box {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffffe3;
+    padding: 30px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+#auth .auth-title {
+    font-size: 20px;
+    margin-bottom:1rem
+}
+#auth .auth-subtitle {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color:#a8aebb
+}
+
+#auth .auth-logo {
+    text-align: center;
+}
+
+#auth .auth-logo img {
+    height:2rem
+}
+
+@media screen and (max-width:767px){
+    #auth #auth-left {
+        padding: 20px;
+    }
+}
+/* End Authentication */
